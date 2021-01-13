@@ -1,0 +1,198 @@
+.met-myapp {
+  position: relative;
+}
+
+.met-myapp .media {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 0;
+  border-radius: 4px;
+  position: relative;
+
+  display: block;
+}
+
+.met-myapp .media.install {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.075) !important;
+}
+
+.met-myapp .media.install .body a {
+  color: #008dff !important;
+}
+
+.met-myapp .media img {
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+}
+
+
+.met-myapp .media .card-text {
+  color: #a1a1a1;
+  font-size: 13px;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.met-myapp .media .body {
+  padding: 15px;
+  display: flex;
+
+}
+
+.met-myapp .media .body a {
+  display: flex;
+  color: #333;
+  flex: 1;
+}
+
+.met-myapp .media .media-body {
+  flex: auto;
+  flex-wrap: wrap;
+  width:80%;
+}
+
+
+.met-myapp .media .media-body p {
+  margin-bottom: 0;
+}
+
+.met-myapp .media .actions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #fafafa;
+  border-top: 1px solid #e8e8e8;
+  zoom: 1;
+  display: flex;
+}
+
+.met-myapp .media.install {}
+
+.met-myapp .media.install .actions {}
+
+.met-myapp .media .text-help {
+  color: rgba(0, 0, 0, 0.45);
+
+}
+
+.met-myapp .media .actions li {
+  margin: 12px 0;
+  flex: 1;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+
+.met-myapp .media .actions li:not(:last-child) {
+  border-right: 1px solid #e8e8e8;
+}
+
+.webui-popover-title {
+  font-size: 14px !important;
+}
+
+.met-myapp iframe {
+  width: 100%;
+  height: 700px;
+  border: none;
+}
+
+.met-myapp .media .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.58);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.met-myapp .media .overlay .btn {
+  height: 36px;
+  width: 100px;
+  align-self: center;
+  border: none;
+}
+
+.met-myapp-list-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.met-myapp-list-row .col {
+  padding-left: 0;
+  padding-right: 15px;
+  margin-bottom: 15px;
+
+}
+
+.met-myapp-list-row .col h5 {
+  font-size: 16px !important;
+
+}
+
+.met-myapp .detail {
+  display: none;
+}
+
+.met-myapp-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 15px;
+}
+
+.met-myapp-right .user div,
+.met-myapp-right .user a {
+  padding: 0 10px;
+  line-height: 35px;
+}
+
+.met-myapp .tips {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.text-red {
+  color: #f93e3c !important;
+}
+
+.text-blue {
+  color: #008dff !important;
+}
+
+.text-green {
+  color: #00c853 !important;
+}
+
+.search {
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.search .input-group {
+  width: 400px;
+  flex-wrap: nowrap;
+  margin-bottom: 12px;
+}
+
+.search .input-group .input-group-text {
+  height: 35px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

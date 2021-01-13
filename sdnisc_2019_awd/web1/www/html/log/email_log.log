@@ -1,0 +1,4 @@
+Nov 03 00:02:22 xctf[58]: Trying to smtp.163.com:25
+Nov 03 00:02:42 xctf[58]: Error: Cannot connenct to relay host smtp.163.com
+Nov 03 00:02:42 xctf[58]: Error: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution (0)
+Nov 03 00:02:42 xctf[58]: Error: Cannot send email to 

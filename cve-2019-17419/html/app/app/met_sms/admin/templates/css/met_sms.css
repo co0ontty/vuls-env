@@ -1,0 +1,15 @@
+
+.met_sms .head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+}
+
+.met_sms-right .user div,
+.met_sms-right .user a {
+  padding: 0 10px;
+  line-height: 35px;
+}

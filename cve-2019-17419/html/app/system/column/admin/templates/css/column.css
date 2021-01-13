@@ -1,0 +1,11 @@
+@charset "utf-8";
+#column-list tbody tr .td-column-name{position: relative;}
+#column-list tbody tr:not(.class1) .td-column-name:before,
+#column-list tbody tr:not(.class1) .td-column-name:after{content: ''; background: #ccc; position: absolute;}
+#column-list tbody tr:not(.class1) .td-column-name:before {width: 1px;height: 100%;top: 0;}
+#column-list tbody tr:not(.class1) .td-column-name:after{width: .5rem;height: 1px;top: 50%;}
+#column-list tbody tr.class2 .td-column-name:before,
+#column-list tbody tr.class2 .td-column-name:after{left: 1.5rem;}
+#column-list tbody tr.class3 .td-column-name:before,
+#column-list tbody tr.class3 .td-column-name:after{left: 3rem;}
+#column-list .move-column-list{max-height: 600px;}

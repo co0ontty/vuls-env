@@ -1,0 +1,25 @@
+.htmlloading_html {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    width: 280px;
+    height: 300px;
+    padding-bottom: 5px;
+    overflow: auto;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    z-index: 100;
+}
+
+.htmlloading_generate {
+    position: absolute;
+    min-width: 100%;
+    min-height: 200px;
+    overflow: auto;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    z-index: 100;
+    margin-top: -90px;
+    margin-left: 0px;
+}
+

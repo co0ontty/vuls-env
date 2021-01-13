@@ -1,0 +1,10 @@
+/**
+Address editable input.
+Internally value stored as {city: "Moscow", street: "Lenina", building: "15"}
+
+@class address
+@extends abstractinput
+@final
+@example
+**/
+!function(t){"use strict";var i=function(t){this.init("address",t,i.defaults)};t.fn.editableutils.inherit(i,t.fn.editabletypes.abstractinput),t.extend(i.prototype,{render:function(){this.$input=this.$tpl.find("input")},value2html:function(i,e){if(!i)return void t(e).empty();var n=t("<div>").text(i.city).html()+", "+t("<div>").text(i.street).html()+" st., bld. "+t("<div>").text(i.building).html();t(e).html(n)},html2value:function(t){return null},value2str:function(t){var i="";if(t)for(var e in t)i=i+e+":"+t[e]+";";return i},str2value:function(t){return t},value2input:function(t){t&&(this.$input.filter('[name="city"]').val(t.city),this.$input.filter('[name="street"]').val(t.street),this.$input.filter('[name="building"]').val(t.building))},input2value:function(){return{city:this.$input.filter('[name="city"]').val(),street:this.$input.filter('[name="street"]').val(),building:this.$input.filter('[name="building"]').val()}},activate:function(){this.$input.filter('[name="city"]').focus()},autosubmit:function(){this.$input.keydown(function(i){13===i.which&&t(this).closest("form").submit()})}}),i.defaults=t.extend({},t.fn.editabletypes.abstractinput.defaults,{tpl:'<div class="editable-address"><label><span>City: </span><input type="text" name="city" class="input-small"></label></div><div class="editable-address"><label><span>Street: </span><input type="text" name="street" class="input-small"></label></div><div class="editable-address"><label><span>Building: </span><input type="text" name="building" class="input-mini"></label></div>',inputclass:""}),t.fn.editabletypes.address=i}(window.jQuery);
